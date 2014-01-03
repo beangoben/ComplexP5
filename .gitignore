@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 distribution
+=======
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+>>>>>>> 64d8cff4e31fb8129834f2d27ee1a659463ee53b

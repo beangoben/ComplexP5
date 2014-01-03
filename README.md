@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 The following describes how to set up a Processing library project in Eclipse and build it successfully, and to make your library ready for distribution.
 
 ## Import to Eclipse
@@ -98,3 +99,7 @@ To change the JRE used to compile your Java project:
 Ant is a Java-based build tool. For [more information](http://ant.apache.org/faq.html#what-is-ant) visit the [Ant web site](http://ant.apache.org/). Ant uses a file named `build.xml` to store build settings for a project.
 
 Javadoc is an application that creates an HTML-based API documentation of Java code. You can check for its existence by typing `javadoc` on the command line. On Mac OS X, it is installed by default. On Windows and Linux, installing the JDK will also install the Javadoc tool. 
+=======
+ComplexP5
+=========
+>>>>>>> 64d8cff4e31fb8129834f2d27ee1a659463ee53b
