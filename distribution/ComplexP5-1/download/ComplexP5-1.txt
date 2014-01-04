@@ -31,7 +31,7 @@ sentence = Complex numbers extension for Processing
 # 'sentence' always will be prepended, so you should start by writing the
 # second sentence here. If your library only works on certain operating systems,
 # mention it here.
-paragraph =  
+paragraph = "Fill me" 
 
 # Links in the 'sentence' and 'paragraph' attributes can be inserted using the
 # same syntax as for authors. 
