@@ -1,33 +1,36 @@
-class Prueba implements ComplexFunction{
-  /* Parametros de la funcion */
-  Complex alpha;
-  float theta;
-  MobiusTransform f;
-  MobiusTransform g;
-  ComplexCircle d;
-  /* constructor */
-  Prueba(Complex alphaa,float thetaa,MobiusTransform ff, MobiusTransform gg,ComplexCircle dd){
-  alpha=alphaa.dup();
-  theta=thetaa;
-  f=ff.dup();
-  g=gg.dup();
-  d=dd.dup();
-  }
-  
-  Complex map(Complex z){
-    return this.mapi(z.dup());
-  }
-  /* Aqui definimos la funcion */
-  Complex mapi(Complex z){
-    
-    if(d.isInside(z)){
-      z=g.map(z);
-    }
-    else {
-      z=f.map(z);
-    }
+class PolygonCircle {
+  int n;
+  float rad;
+  Complex center;
+  Complex[] v;
+  ComplexPlane cxplane;
 
-    return z;
+  PolygonCircle(Complex c, float r, int nn, ComplexPlane cxp) {
+    n=nn;
+    rad=r;
+    center=c.dup();
+    cxplane=cxp;
+    v=new Complex[n];
+    float ang=TWO_PI/(float)n;
+    for (int i=0; i < n; i++) {
+      v[i]=Complex.polar(rad, ang*i).addi(center);
+    }
   }
-  
+
+  void draw() {
+    if ( center.abs() < cxplane.width()*2) {
+      beginShape();
+      for (int i=0; i < n; i++) {
+        cxplane.vertex(v[i]);
+      }
+      endShape(CLOSE);
+    }
+  }  
+
+  void transform(ComplexFunction f) {
+    for (int i=0; i < n; i++) {
+      v[i]=f.map(v[i]);
+    }
+    center=f.map(center);
+  }
 }

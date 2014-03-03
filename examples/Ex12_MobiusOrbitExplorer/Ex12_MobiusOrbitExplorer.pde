@@ -24,7 +24,6 @@ void setup(){
   size(800,800);
   background(255);
   controlWindowFrame = new PFrame();
-  setupMidi();
   //extra colors
   colors=new DiscretePalete1D(2500,(int)random(1,61));
   //Start the complex plane with center a 0 and 10 units wide in each direction

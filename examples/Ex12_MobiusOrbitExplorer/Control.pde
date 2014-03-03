@@ -5,6 +5,54 @@ import controlP5.*;
 ControlP5 controlP5;
 ControlWindow controlWindow;
 
+float radCenter=0.0,radA=5.1,radB=1.0,radC=1.0,radD=5.1,radiusCircle=0.5;
+float angCenter=0.0,angA=1.373,angB=0.0,angC=0.0,angD=1.373;
+
+//Values for Sliders
+String [] sliders= {
+  "radA", "radB","radC", "radD","radCenter","radiusCircle"
+};
+float [] sliderMin= {
+  0.0,0.0, 0.0, 0.0, 0.0,0.0
+};
+
+float [] sliderMax= {
+  10.0,10.0, 10.0, 10.0, 10.0,10.0
+};
+
+float [] sliderDefaulValues = {
+  5.1,1.0, 1.0, 5.1,0.0,0.2
+};
+//Declaramos valores para los knobs
+String [] knobs= {
+ "angA", "angB","angC","angD","angCenter","alphaBack","alphaDraw","complexSize"
+};
+float [] knobMin= {
+  0.0,0.0, 0.0, 0.0, 0.0,0.0,0.0,-3.0
+};
+float [] knobMax= {
+  TWO_PI,TWO_PI, TWO_PI, TWO_PI, TWO_PI,255,255,3.0
+};
+float [] knobDefaulValues = {
+  1.373,HALF_PI,0.0,1.373,0.0,255,alphaDraw,1.0
+};
+
+
+//Values for Buttons
+String [] butt1= {
+"drawBack","drawInfo","complexInfo","orbitals","drawFixed","changePalete"
+};
+boolean [] butt1DefaultValue= {
+drawBack,drawInfo,complexInfo,orbitals,drawFixed,false
+};
+String [] butt2= {
+
+};
+
+String [] butt3= {
+
+};
+
 //creation Second Window
 public class PFrame extends JFrame {
   
