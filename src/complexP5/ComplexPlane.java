@@ -184,7 +184,7 @@ public class ComplexPlane {
 		app.fill(255, 0, 0, 25);
 		app.ellipse(xcenter, ycenter, xpix * 10, ypix * 10);
 		app.fill(0);
-		drawText("O", app.width / 2.0f, app.height / 2.0f);
+		drawText("O", app.width / 2.0f, app.height / 2.0f,24);
 	}
 
 	public void drawMouse() {
@@ -194,19 +194,30 @@ public class ComplexPlane {
 		app.ellipse(pos.real(), pos.imag(), xpix * 10, ypix * 10);
 		app.fill(0, 78);
 		app.fill(50);
-		drawText(pos.toStringNice(2), (float) app.mouseX, (float) app.mouseY);
+		drawText(pos.toStringNice(2), (float) app.mouseX, (float) app.mouseY,24);
 	}
 
-	public void drawText(String s, float x, float y) {
+	public void drawText(String s, float x, float y,int sizet) {
 		app.pushMatrix();
 		app.translate(xcenter, -ycenter);
 		app.scale(1.0f / xscale, -1.0f / yscale);
 		app.translate(-app.width / 2.0f, -app.height / 2.0f);
-		app.textSize(24);
+		app.textSize(sizet);
 		app.text(s, x, y);
 		app.popMatrix();
 	}
 
+	public void drawString(String s, float x, float y,int sizet) {		 
+		app.pushMatrix();
+		app.translate(0,0);
+		app.stroke(0);
+		app.fill(0);
+		app.textSize(sizet);
+		app.textFont(latexfont,sizet);
+		app.text(s, x, y);
+		app.popMatrix();
+	}
+	
 	public float strokeWScale(float w) {
 		return (w / (xscale));
 	}
@@ -255,6 +266,7 @@ public class ComplexPlane {
 		drawGrid(1.0f,1.0f);
 	}
 	
+	
 	public void complexText(String name,Complex z,float x,float y,int sizet){
 		  app.pushMatrix();
 		  app.translate(0,0);
@@ -264,7 +276,7 @@ public class ComplexPlane {
 		  app.textFont(latexfont,sizet);
 		  app.text(name+"=",x,y+sizet);
 		  String zs=z.toStringNice(2);
-		  float ts=app.textWidth(name);
+		  float ts=app.textWidth(name+"= ");
 		 app.text(zs,x+ts,y+sizet);
 		 app.popMatrix();
 		}

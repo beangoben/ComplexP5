@@ -46,19 +46,22 @@ void draw(){
   cxplane.drawGrid();
 
   Complex z=cxplane.mouse();
-    
+  Complex zt=z.dup();
+  
   stroke(0);
-  beginShape();
   noFill();
+  
+  beginShape();
   cxplane.vertex(z);
   cxplane.circle(z,cxplane.xpixel()*2);
   for(int i=0 ; i < 100; i++){
-    z=F.map(z);
-    cxplane.vertex(z);
-    cxplane.circle(z,cxplane.xpixel()*2);
+    zt=F.map(zt);
+    cxplane.vertex(zt);
+    cxplane.circle(zt,cxplane.xpixel()*2);
   }
- endShape();
-
+  
+  endShape();
+  //dibujo disco
   fill(255,0,0,75);
   disk.draw();
   
@@ -67,7 +70,10 @@ void draw(){
   
   cxplane.mobiusText("f",F.f,20,20,48);
   cxplane.mobiusText("g",F.g,20,80,48);
-  cxplane.complexText("a",alpha,20,150,28);
-  cxplane.complexText("Disk center",disk.center(),20,200,28);
+  cxplane.complexText("a",alpha,20,150,24);
+  cxplane.complexText("Disk center ",disk.center(),20,180,24);
+  cxplane.drawText("Disk rad = "+disk.rad(),20,210,24);
+
+  cxplane.complexText("z",z,20,240,24);
 
 }

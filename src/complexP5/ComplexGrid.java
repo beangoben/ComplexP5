@@ -16,7 +16,7 @@ public  ComplexGrid(Complex center, float width,float height, int n1, int n2, Co
 	    cxplane=plane;
 	    diag=PApplet.sqrt(width*width+height*height);
 	    for (int j=0; j < nheight; j++) {
-	      float y=PApplet.map(j,0,nheight-1.0f, center.imag()-height/2.0f,(float)center.imag()+height/2.0f);
+	      float y=PApplet.map(j,0,nheight-1.0f, center.imag()-height/2.0f,center.imag()+height/2.0f);
 	      for (int i=0; i < nwidth; i++) {
 	        float x=PApplet.map(i,0,nwidth-1.0f, center.real()-width/2.0f,center.imag()+width/2.0f);
 	        p[j][i]=new Complex(x, y);
