@@ -12,7 +12,7 @@ import processing.core.PConstants;
  */
 
 public class ComplexPlane {
-	PApplet app;
+	public PApplet app;
 	// range
 	private float xmin = -3, xmax = 3;
 	private float ymin = -3, ymax = 3;
@@ -250,10 +250,69 @@ public class ComplexPlane {
 		}
 
 	}
+	
+	public void drawGrid() {
+		drawGrid(1.0f,1.0f);
+	}
+	
+	public void complexText(String name,Complex z,float x,float y,int sizet){
+		  app.pushMatrix();
+		  app.translate(0,0);
+		  app.stroke(0);
+		  app.fill(0);
+		  app.textSize(sizet);
+		  app.textFont(latexfont,sizet);
+		  app.text(name+"=",x,y+sizet);
+		  String zs=z.toStringNice(2);
+		  float ts=app.textWidth(name);
+		 app.text(zs,x+ts,y+sizet);
+		 app.popMatrix();
+		}
+	
+	public void affineText(String name,AffineTransform T,float x,float y,int sizet){
+		  app.pushMatrix();
+		  app.translate(0,0);
+		  app.stroke(0);
+		  app.fill(0);
+		  app.textSize(sizet);
+		  app.textFont(latexfont,sizet);
+		  app.text(name+"(z)=",x,y+sizet);
+		  app.textFont(latexfont,sizet/2);
+		  String numerator="("+T.getA().toStringNice(2)+") z + ("+T.getB().toStringNice(2)+")";
+		 app.text(numerator,x+sizet*3.2f,y+sizet*0.75f);
+		 app.popMatrix();
+		}
 
+	public void mobiusText(String name,MobiusTransform T,float x,float y,int sizet){
+		  app.pushMatrix();
+		  app.translate(0,0);
+		  app.stroke(0);
+		  app.fill(0);
+		  app.textSize(sizet);
+		  app.textFont(latexfont,sizet);
+		  app.text(name+"(z)=",x,y+sizet);
+		  app.textFont(latexfont,sizet/2);
+		  String numerator="("+T.getA().toStringNice(2)+") z + ("+T.getB().toStringNice(2)+")";
+		  String denominator="("+T.getC().toStringNice(2)+") z + ("+T.getD().toStringNice(2)+")";
+		 float linewidth=PApplet.max(app.textWidth(numerator),app.textWidth(denominator))*1.1f;
+		 app.text(numerator,x+sizet*3.2f,y+(sizet*1.2f)/2f);
+		 app.text(denominator,x+sizet*3.2f,y+(sizet*1.2f));
+		 app.strokeWeight(3);
+		  app.line(x+sizet*3f,y+(sizet*1.5f)/2,x+sizet*3f+linewidth,y+(sizet*1.5f)/2f);
+		  app.strokeWeight(1);
+		 // text("Center at "+complexString(circ.center)+", r="+nf(circ.r,1,2),x,sizet*2+y);
+		 // text("trace = "+complexString(T.trace()),x,sizet*2.5+y);
+		 // text("det = "+complexString(T.det()),x,sizet*3+y); 
+		  app.popMatrix();
+		}
+	
 	//* 2D Primitives with complex numbers *//
 	public void line(Complex a,Complex b){
 		app.line(a.real(),a.imag(),b.real(),b.imag());
+	}
+
+	public void circle(Complex a,float rad){
+		app.ellipse(a.real(),a.imag(),rad,rad);
 	}
 
 	public void ellipse(Complex a,float wid,float hei){

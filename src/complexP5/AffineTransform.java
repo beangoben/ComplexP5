@@ -1,6 +1,6 @@
 package complexP5;
 
-public class AffineTransform {
+public class AffineTransform implements ComplexFunction {
 
     private Complex a, b;
 
@@ -23,10 +23,18 @@ public class AffineTransform {
         return a;
     }
 
+    public void setA(Complex ao) {
+        a.copy(ao);
+    }
+    
     public Complex getB() {
         return b;
     }
 
+    public void setB(Complex bo) {
+        b.copy(bo);
+    }
+    
     public void set(Complex ao, Complex bo) {
         a = ao.dup();
         b = bo.dup();
@@ -46,20 +54,32 @@ public class AffineTransform {
     }
 
     public Complex map(Complex z) {
-        return (a.mul(z)).addi(b);
+        return this.mapi(z.dup());
     }
 
-    public void mapi(Complex z) {
+    public Complex mapi(Complex z) {
         z.muli(a);
         z.addi(b);
+        return z;
     }
-
-    public void normalize() {
+      
+    public AffineTransform normi() {
         if (!a.isZero())a.divi(a.abs());
+        return this;
+    }
+    
+    public AffineTransform norm() {
+        return this.dup().normi();
     }
 
-    public AffineTransform inverse() {
-        return new AffineTransform(a.inv(), (b.div(a)).negi());
+    public AffineTransform invi() {
+    	b.divi(a).negi();
+    	a.invi();
+        return this;
+    }
+    
+    public AffineTransform inv() {
+        return this.dup().invi();
     }
 
     public AffineTransform compose(AffineTransform T) {

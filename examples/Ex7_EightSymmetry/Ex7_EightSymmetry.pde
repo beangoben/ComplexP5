@@ -4,11 +4,20 @@ import complexP5.*;
 ComplexPlane cxplane;
 int n=5; //sides of polygon
 float rad=1.0; //radius of polygon
+ComplexFunction[] symmetries; 
 
 void setup() {
   size(800, 800);
   cxplane = new ComplexPlane(this, 10.0f);
   background(255);
+  symmetries=new ComplexFunction[7];
+  symmetries[0]=new Negative();
+  symmetries[1]=new Conjugate();
+  symmetries[2]=new ConjuNeg();
+  symmetries[3]=new Inversion();
+  symmetries[4]=new InvNegative();
+  symmetries[5]=new InvConjugate();
+  symmetries[6]=new InvConjuNeg();
 }
 
 void draw() {
@@ -20,7 +29,6 @@ void draw() {
   colorMode(HSB);
   //begin n-polygon!
   npolygon(cxplane.mouse(), rad, n);
-  npolygonInv(cxplane.mouse(), rad, n);
   /* END */
   cxplane.end();
 }
@@ -44,7 +52,7 @@ void keyPressed() {
 
 void npolygon(Complex center, float r, float n) {
   //original
-  fill(color(0, 255, 255, 75));
+  fill(color(127, 127, 127, 75));
   float angle=TWO_PI/(float)n;
   beginShape();
   for (int i=0; i < n; i++) {
@@ -54,78 +62,16 @@ void npolygon(Complex center, float r, float n) {
     cxplane.ellipse(z, 0.1, 0.10);
   }	  
   endShape(CLOSE);
-  //negative
-  fill(color(25, 255, 255, 75));
-  beginShape();
-  for (int i=0; i < n; i++) {
-    Complex z = Complex.polar(r, angle*i);
-    z.addi(center);
-    z.negi();
-    cxplane.vertex(z);
-  }    
-  endShape(CLOSE);
-  //conjugated
-  fill(color(50, 255, 255, 75));
-  beginShape();
-  for (int i=0; i < n; i++) {
-    Complex z = Complex.polar(r, angle*i);
-    z.addi(center);
-    z.conji();
-    cxplane.vertex(z);
-  }    
-  endShape(CLOSE);
-  //conjugated negative
-  fill(color(125, 255, 255, 75));
-  beginShape();
-  for (int i=0; i < n; i++) {
-    Complex z = Complex.polar(r, angle*i);
-    z.addi(center);
-    z.conji().negi();
-    cxplane.vertex(z);
-  }    
-  endShape(CLOSE);
-}
-
-void npolygonInv(Complex center, float r, float n) {
-  //original
-  fill(color(125, 255, 255, 75));
-  float angle=TWO_PI/(float)n;
-  beginShape();
-  for (int i=0; i < n; i++) {
-    Complex z = Complex.polar(r, angle*i);
-    z.addi(center);
-    z.invi();
-    cxplane.vertex(z);
-  }    
-  endShape(CLOSE);
-  //negative
-  fill(color(150, 255, 255, 75));
-  beginShape();
-  for (int i=0; i < n; i++) {
-    Complex z = Complex.polar(r, angle*i);
-    z.addi(center);
-    z.invi().negi();
-    cxplane.vertex(z);
-  }    
-  endShape(CLOSE);
-  //conjugated
-  fill(color(175, 255, 255, 75));
-  beginShape();
-  for (int i=0; i < n; i++) {
-    Complex z = Complex.polar(r, angle*i);
-    z.addi(center);
-    z.invi().conji();
-    cxplane.vertex(z);
-  }    
-  endShape(CLOSE);
-  //conjugated negative
-  fill(color(200, 255, 255, 75));
-  beginShape();
-  for (int i=0; i < n; i++) {
-    Complex z = Complex.polar(r, angle*i);
-    z.addi(center);
-    z.invi().conji().negi();
-    cxplane.vertex(z);
-  }    
-  endShape(CLOSE);
+  colorMode(HSB);
+  for(int si=0; si < 7; si++){
+    fill(color(255/7.0f*si, 255, 255, 75));
+    beginShape();
+    for (int i=0; i < n; i++) {
+      Complex z = Complex.polar(r, angle*i);
+      z.addi(center);
+      symmetries[si].mapi(z);
+      cxplane.vertex(z);
+    }
+      endShape(CLOSE);
+  }
 }

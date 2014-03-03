@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="1068.5483"
+   height="1068.5483"
+   viewBox="-372 -372 1060 1060"
+   id="svg2"
+   xml:space="preserve"><metadata
+     id="metadata29"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs4"><clipPath
+       id="xg"><path
+         d="m 101,-101 37,64 v 74 l -37,64 -64,37 h -74 l -64,-37 -37,-64 v -74 l 37,-64 64,-37 h 74"
+         id="path7" /></clipPath></defs><path
+     d="M -372,158 423,-301 V 617 M 688,158 -107,-301 V 617 M 158,-372 -301,423 H 617 M 158,688 -301,-107 h 918"
+     id="path11"
+     style="fill:#dd6655" /><path
+     d="M 423,-107 H -107 V 423 H 423"
+     id="path13"
+     style="fill:#99aaee" /><path
+     d="M 158,-148 -107,5 V 311 L 158,464 423,311 V 5 M 464,158 311,423 H 5 L -148,158 5,-107 h 306"
+     id="path15"
+     style="fill:#ddcc44" /><path
+     d="M 520,61 61,-204 -204,255 255,520 M 255,-204 520,255 61,520 -204,61 M 423,-107 H -107 V 423 H 423 M -126,158 300,-88 V 404 M 442,158 16,-88 V 404 M 158,-126 -88,300 H 404 M 158,442 -88,16 h 492"
+     id="path17"
+     style="fill:#111b25;fill-rule:evenodd" /><path
+     d="M 158,98 139,65 h 38 m -19,153 -19,33 h 38 M 98,158 65,139 v 38 m 153,-19 33,-19 v 38 m -22,-82 19,33 H 68 l 19,-33 19,33 h 104 m 0,60 H 68 l 19,33 19,-33 h 142 l -19,33 m -134,8 33,19 V 68 l -33,19 33,19 v 104 m 60,0 V 68 l 33,19 -33,19 v 142 l 33,-19"
+     id="path19"
+     style="fill:#ff5533" /><path
+     d="m 153,-185 -306,82 v 12 l 306,-82 v 12 l -306,82 v 12 l 306,-82 v 12 l -306,82 v 12 l 306,-82 v 12 l -306,82 v 12 l 306,-82 v 12 L -153,-7 V 5 l 306,-82 v 12 l -306,82 v 12 l 306,-82 v 12 l -306,82 v 12 l 306,-82 v 12 L -153,65 V 77 L 153,-5 V 7 l -306,82 v 12 L 153,19 v 12 l -306,82 v 12 L 153,43 v 12 l -306,82 v 12 L 153,67 v 12 l -306,82 v 12 L 153,91 v 12 l -306,82 m -32,-338 82,306 h 12 l -82,-306 h 12 l 82,306 h 12 l -82,-306 h 12 l 82,306 h 12 l -82,-306 h 12 l 82,306 h 12 l -82,-306 h 12 L -7,153 H 5 l -82,-306 h 12 l 82,306 h 12 l -82,-306 h 12 l 82,306 h 12 l -82,-306 h 12 L 65,153 H 77 L -5,-153 H 7 l 82,306 h 12 L 19,-153 h 12 l 82,306 h 12 L 43,-153 h 12 l 82,306 h 12 L 67,-153 h 12 l 82,306 h 12 L 91,-153 h 12 l 82,306"
+     transform="translate(158,158)"
+     clip-path="url(#xg)"
+     id="path21"
+     style="opacity:0.36000001;fill:none;stroke:#bbddff;stroke-width:2" /><path
+     d="M 159,117"
+     id="path23"
+     style="opacity:0.3" /><path
+     d="m 203,132 -97,26 97,26 -71,-71 26,97 26,-97 -71,71 97,-26 -97,-26 71,71 -26,-97 -26,97 m 34,-53 h -16 v 16 h 16 m 3,-11 -14,-8 -8,14 14,8 m 0,-22 8,14 -14,8 -8,-14"
+     id="path25"
+     style="fill:#f9602d;fill-rule:evenodd" /></svg>

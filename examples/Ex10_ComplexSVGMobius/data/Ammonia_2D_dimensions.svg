@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:ns="http://www.xml-cml.org/schema/cml2/core/#"
+   xmlns:cml="http://www.xml-cml.org/schema/cml2/core/"
+   xmlns:en.wikipedia.org="http://en.wikipedia.org/wiki/Template:"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="360"
+   height="300"
+   id="svg2"
+   xml:space="preserve">
+
+
+  <defs
+   id="defs5" />
+  <text
+   x="169.58984"
+   y="91.265625"
+   id="text1316"
+   style="font-size:80px;font-family:Arial">N</text>
+
+
+
+  <text
+   x="4.3945312"
+   y="174"
+   id="text1320"
+   style="font-size:80px;font-family:Arial">H</text>
+
+
+     
+  <text
+   x="191.06494"
+   y="162.30811"
+   id="text2344"
+   style="font-size:25px;fill:#ff0000;fill-opacity:1;font-family:Arial">107.8°</text>
+
+
+       
+    <text
+   x="119.88867"
+   y="270.10742"
+   id="text2172"
+   style="font-size:80px;font-family:Arial">H</text>
+
+
+    <text
+   x="309.88867"
+   y="188.10742"
+   id="text2174"
+   style="font-size:80px;font-family:Arial">H</text>
+
+
+    <path
+   d="m 218.30078,19 c 0,2.48528 -2.01472,4.5 -4.5,4.5 -2.48528,0 -4.5,-2.01472 -4.5,-4.5 0,-2.48528 2.01472,-4.5 4.5,-4.5 2.48528,0 4.5,2.01472 4.5,4.5 z"
+   id="path2176"
+   style="stroke:#000000;stroke-width:5;stroke-opacity:1" />
+        
+    <path
+   d="m 167.05995,180.84618 c 96.92024,47.49653 118.43872,-50.0207 118.43872,-50.0207"
+   id="path3165"
+   style="fill:none;stroke:#ff0000;stroke-width:3;stroke-miterlimit:4;stroke-dasharray:none" />
+        
+   <path
+   d="M 28.348785,99.65121 C 163.65121,34.348785 163.65121,34.348785 163.65121,34.348785"
+   id="path5105"
+   style="fill:none;stroke:#ff0000;stroke-width:4.69757032;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+        
+    <text
+   x="36.87793"
+   y="45.948242"
+   id="text6088"
+   style="font-size:20px;fill:#ff0000;fill-opacity:1;font-family:Arial">101.7 pm</text>
+
+
+    <path
+   d="m 157.20012,36.631526 c -9.77515,-4.662195 -10.68305,-5.924003 -10.68305,-5.924003 24.19133,-1.460301 28.33564,-1.940452 28.33564,-1.940452 -19.3558,17.989983 -20.33415,18.715858 -20.33415,18.715858 2.64344,-9.414107 2.54858,-10.623439 2.54202,-10.621254 l 1.5,-0.539698"
+   id="path6102"
+   style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#fd0000;stroke-width:1.03414226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /><path
+   d="m 32.986968,97.61191 c 10.204964,3.62607 11.513032,5.01 11.513032,5.01 -23.910515,3.95477 -27.982929,4.86102 -27.982929,4.86102 C 33.908197,87.58733 34.806215,86.76414 34.806215,86.76414 34.769199,98.18491 34.14831,97.76245 34.14831,97.76245 l 0.252764,0.01362"
+   id="path7073"
+   style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#fd0000;stroke-width:1.03414226px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    
+    <path
+   d="m 310.15864,146.2868 -84.5,-57.5"
+   id="path1332"
+   style="stroke:#000000;stroke-width:5;stroke-opacity:1" />
+    <path
+   d="m 189.92579,100.76229 -33.02932,105.13949 -14.72016,-7.49193 47.74948,-97.64756 z"
+   id="path1334"
+   style="stroke:#000000;stroke-width:5;stroke-opacity:1" />
+    <path
+   d="m 163.30078,80.5 4.75,8"
+   id="path1448"
+   style="stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-opacity:1" />
+    <path
+   d="m 149.30078,86.25 5.75,10.25"
+   id="path1450"
+   style="stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-opacity:1" />
+    <path
+   d="m 135.55078,93.25 5.5,10"
+   id="path1452"
+   style="stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-opacity:1" />
+    <path
+   d="m 120.80078,99.75 7.25,12"
+   id="path1454"
+   style="stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-opacity:1" />
+    <path
+   d="m 106.80078,105.5 7.75,13.75"
+   id="path1456"
+   style="stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-opacity:1" />
+    <path
+   d="m 93.050781,112.25 7.749999,14.5"
+   id="path1458"
+   style="stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-opacity:1" />
+    <path
+   d="m 78.800781,117.25 8.25,17.5"
+   id="path1460"
+   style="stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-opacity:1" />
+    <path
+   d="m 63.300781,122.25 11.25,21.25"
+   id="path1462"
+   style="stroke:#000000;stroke-width:5;stroke-linecap:round;stroke-opacity:1" />
+    <path
+   d="m 192.30078,19 c 0,2.48528 -2.01472,4.5 -4.5,4.5 -2.48528,0 -4.5,-2.01472 -4.5,-4.5 0,-2.48528 2.01472,-4.5 4.5,-4.5 2.48528,0 4.5,2.01472 4.5,4.5 z"
+   id="path1464"
+   style="stroke:#000000;stroke-width:5;stroke-opacity:1" />
+    
+  <metadata
+   id="metadata26">
+         <rdf:RDF>
+        
+        <rdf:Description
+   rdf:about="http://commons.wikipedia.org/Ammonia_2D_dimensions.svg">
+        
+            <dc:title>Ammonia with WP Chembox and CML</dc:title>
+            <dc:date>2007-10-13</dc:date>
+            <dc:format>image/svg+xml</dc:format>
+            <dc:creator>http://commons.wikimedia.org/wiki/User:DoSiDo</dc:creator>
+
+            <dc:source>http://pubchem.ncbi.nlm.nih.gov</dc:source>
+            <rdfs:seeAlso
+   rdf:resource="http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=222" />
+            <rdfs:seeAlso
+   rdf:resource="http://www.emolecules.com/cgi-bin/search?t=ss&amp;q=7664-41-7&amp;c=0&amp;v=" />
+
+            <dc:identifier>InChI=1/H3N/h1H3</dc:identifier>
+            <dc:identifier>pubchemCID=222</dc:identifier>
+            <dc:identifier>SMILES=N</dc:identifier>
+            <dc:identifier>CAS=7664-41-7</dc:identifier>
+            <dc:identifier>IUPACname=azane</dc:identifier>
+                   
+            <en.wikipedia.org:Chembox_new
+   rdf:parseType="Literal">
+              <!--the text between the CDATA section can be copied to the molecule's page, this was copied from WP on 2007-10-13-->
+               
+               
+                {{chembox new
+                | ImageFileL1 = Ammonia_2D_dimensions.svg
+                | ImageSizeL1 = 150 px
+                | ImageFileR1 = Ammonia-3D-vdW.png
+                | ImageSizeR1 = 150 px
+                | IUPACName = Azane
+                | OtherNames = Ammonia&lt;br/&gt;Hydrogen nitride&lt;br/&gt;Spirit of hartshorn&lt;br /&gt;Nitrosil&lt;br /&gt;Vaporole &lt;ref&gt;[http://webbook.nist.gov/cgi/cbook.cgi?Name=Ammonia Ammonia data at NIST Webbook], last accessed May 7 2007.&lt;/ref&gt;
+                | Section1 = {{Chembox Identifiers
+                | CASNo = 7664-41-7
+                | PubChem = 222
+                | SMILES = N
+                | InChI = 1/H3N/h1H3
+                | RTECS = BO0875000
+                }}
+               | Section2 = {{Chembox Properties
+                | Formula = NH&lt;sub&gt;3&lt;/sub&gt;
+                | MolarMass = 17.0306 g/mol
+                | Appearance = Colorless gas with strong pungent odor
+                | Density = 0.6942 &lt;ref&gt;[http://webbook.nist.gov/cgi/fluid.cgi?Action=Load&amp;amp;ID=C7664417&amp;amp;Type=IsoTherm&amp;amp;PLow=0.9&amp;amp;PHigh=1.1&amp;amp;PInc=0.1&amp;amp;T=25&amp;amp;RefState=DEF&amp;amp;TUnit=C&amp;amp;PUnit=bar&amp;amp;DUnit=kg%2Fm3&amp;amp;HUnit=kJ%2Fmol&amp;amp;WUnit=m%2Fs&amp;amp;VisUnit=uPa*s&amp;amp;STUnit=N%2Fm NIST Chemistry WebBook] (website page of the National Institute of Standards and Technology) URL last accessed May 15 2007&lt;/ref&gt;
+                | MeltingPt = -77.73 °C (195.42 [[Kelvin|K]])
+                | Melting_notes =
+                | BoilingPt = -33.34 °C (239.81 K)
+                | Boiling_notes = 
+                | Solubility = 89.9 g/100 [[Milliliter|ml]] at 0 °[[Celsius|C]]
+                | SolubleOther = 
+                | Solvent = 
+                | pKa = 36
+                | pKb = 4.75
+                | RefractIndex = [[Dielectric constant|ε&lt;sub&gt;r&lt;/sub&gt;]]
+                }}
+                | Section3 = {{Chembox Structure
+                | MolShape =  Terminus
+                | Dipole = 1.42 [[Debye|D]]
+                }}
+                | Section7 = {{Chembox Hazards
+                | MainHazards = Hazardous gas, caustic, corrosive
+                | NFPA-H = 3
+                | NFPA-F = 1
+                | NFPA-R = 
+                | NFPA-O =
+                | RPhrases = {{R10}}, {{R23}}, {{R34}}, {{R50}}&lt;br/&gt; {{S1/2}}, {{S16}}, {{S36/37/39}},&lt;br /&gt;{{S45}}, {{S61}}
+                | SPhrases = 
+                | RSPhrases =
+                | FlashPt = None&lt;ref&gt;[http://www.wdserviceco.com/03aug06MSDS/msdsANH.pdf MSDS Sheet] from W.D. Service Co.&lt;/ref&gt;
+                | Autoignition = 651 °C
+                | ExploLimits = 
+                | PEL = }}
+                | Section8 = {{Chembox Related
+                | OtherAnions = [[ammonium hydroxide|hydroxide]] (NH&lt;sub&gt;4&lt;/sub&gt;OH)
+                | OtherCations = [[Ammonium]] (NH&lt;sub&gt;4&lt;/sub&gt;&lt;sup&gt;+&lt;/sup&gt;)
+                | OtherFunctn = [[ammonium chloride|chloride]] (NH&lt;sub&gt;4&lt;/sub&gt;Cl)
+                | Function = 
+                | OtherCpds = [[Hydrazine]]&lt;br /&gt;[[Hydrazoic acid]]&lt;br /&gt;[[Hydroxylamine]]&lt;br /&gt;[[Chloramine]] }}
+                }}
+ 
+               
+                
+             </en.wikipedia.org:Chembox_new>
+
+              <cml:molecule
+   rdf:parseType="Literal">
+                 <ns:formula
+   concise="N H 3" />
+                 <ns:name
+   convention="trivial">ammonia</ns:name>
+                  <ns:atomArray>
+                  <ns:atom
+   y2="0.155000"
+   x2="2.536900"
+   elementType="N" />
+                  <ns:atom
+   y2="0.465000"
+   x2="3.073900"
+   elementType="H" />
+                  <ns:atom
+   y2="0.465000"
+   x2="2.000000"
+   elementType="H" />
+                  <ns:atom
+   y2="-0.465000"
+   x2="2.536900"
+   elementType="H" />
+                 </ns:atomArray>
+                 <ns:bondArray>
+                  <ns:bond
+   order="1"
+   atomRefs2="a1 a2" />
+                  <ns:bond
+   order="1"
+   atomRefs2="a1 a3" />
+                  <ns:bond
+   order="1"
+   atomRefs2="a1 a4" />
+                 </ns:bondArray>
+                </cml:molecule>
+                                 
+            </rdf:Description>
+        
+        <cc:Work
+   rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+     rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF>
+  </metadata>    
+    
+       
+</svg>

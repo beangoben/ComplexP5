@@ -145,8 +145,9 @@ public class Complex {
 
 	/** Multiply two complex numbers, in place */
 	public Complex muli(Complex c) {
+		float tmpre=re;
 		re = re * c.re - im * c.im;
-		im = re * c.im + im * c.re;
+		im = tmpre * c.im + im * c.re;
 		return this;
 	}
 
@@ -257,6 +258,10 @@ public class Complex {
 	
 	public Complex square(){
 		return dup().squarei();
+	}
+	
+	public float dist(Complex z){
+		return sub(z).abs();
 	}
 	
 	public Complex powi(float p){

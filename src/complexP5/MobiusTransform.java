@@ -1,6 +1,6 @@
 package complexP5;
 
-public class MobiusTransform {
+public class MobiusTransform implements ComplexFunction {
     private Complex a, b, c, d;
 
     public MobiusTransform() {
@@ -9,7 +9,14 @@ public class MobiusTransform {
         c = Complex.ZERO;
         d = Complex.ONE;
     }
-
+    
+    public MobiusTransform(Complex ai, Complex bi) {
+        a = ai.dup();
+        b = bi.dup();
+        c = Complex.ZERO;
+        d = Complex.ONE;
+    }
+    
     public MobiusTransform(Complex ai, Complex bi, Complex ci, Complex di) {
         a = ai.dup();
         b = bi.dup();
@@ -21,17 +28,40 @@ public class MobiusTransform {
         return a;
     }
 
+    public void setA(Complex ao) {
+        a.copy(ao);
+    }
+    
     public Complex getB() {
         return b;
     }
 
+    public void setB(Complex bo) {
+        b.copy(bo);
+    }
     public Complex getC() {
         return c;
     }
 
+    public void setC(Complex co) {
+        c.copy(co);
+    }
+    
     public Complex getD() {
         return d;
     }
+    
+    public void setD(Complex dd) {
+        d.copy(dd);
+    }
+    
+    public void set(Complex ai, Complex bi, Complex ci, Complex di) {
+            a = ai.dup();
+            b = bi.dup();
+            c = ci.dup();
+            d = di.dup();
+    }
+    
     public void copy(MobiusTransform other) {
         a.copy(other.getA());
         b.copy(other.getB());
@@ -42,20 +72,28 @@ public class MobiusTransform {
     public MobiusTransform dup() {
         return new MobiusTransform(a, b, c, d);
     }
-
+    
+    
+    
     public Complex det() {
         Complex tmp1 = a.mul(d);
         Complex tmp2 = b.mul(c);
         return tmp1.subi(tmp2);
     }
 
-    public void normi() {
+    public MobiusTransform normi() {
         Complex sqrtdet = (this.det()).sqrt();
         a.divi(sqrtdet);
         b.divi(sqrtdet);
         c.divi(sqrtdet);
         d.divi(sqrtdet);
+        return this;
     }
+    
+    public MobiusTransform norm() {
+        return dup().normi();
+    }
+    
 
     public Complex trace() {
         return a.add(d);
@@ -74,11 +112,18 @@ public class MobiusTransform {
         return z;
     }
 
-
-    public MobiusTransform inv() {
+    public MobiusTransform invi() {
         Complex det1 = det();
         Complex det2 = det1.neg();
-        return new MobiusTransform(d.div(det1), b.div(det2), c.div(det2), a.div(det1));
+        d.divi(det1);
+        b.divi(det2);
+        c.divi(det2);
+        a.divi(det1);
+        return this;
+    }
+
+    public MobiusTransform inv() {
+        return dup().invi();
     }
 
     public MobiusTransform compose(MobiusTransform T) {

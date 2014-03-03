@@ -3,7 +3,7 @@ package complexP5;
 public class ComplexCircle {
     private float r;
     private Complex c;
-    ComplexPlane cxplane;
+    private ComplexPlane cxplane;
 
     public ComplexCircle(ComplexPlane plane) {
         r = 1.0f;
@@ -11,6 +11,13 @@ public class ComplexCircle {
         cxplane = plane;
     }
 
+    public ComplexCircle(ComplexCircle other) {
+        r = other.rad();
+        c = other.center().dup();
+        cxplane = other.cxplane();
+    }
+
+    
     public ComplexCircle(Complex center, float rad, ComplexPlane plane) {
         r = rad;
         c = center.dup();
@@ -47,8 +54,13 @@ public class ComplexCircle {
     public Complex center() {
         return c;
     }
-    public ComplexCircle dup(ComplexCircle circ) {
-        return new ComplexCircle(circ.center(), circ.rad(), cxplane);
+    
+    public ComplexPlane cxplane() {
+        return cxplane;
+    }
+    
+    public ComplexCircle dup() {
+        return new ComplexCircle(this);
     }
 
     public void copy(ComplexCircle circ) {
@@ -60,8 +72,16 @@ public class ComplexCircle {
         T.mapi(c);
         r *= T.getA().abs();
     }
-
-    void draw() {
+    
+    public void transform(ComplexFunction T) {
+        T.mapi(c);
+    }
+    
+    public boolean isInside(Complex z){
+    	return z.dist(c) <= r;
+    }
+    
+    public void draw() {
         if ((r > cxplane.xpixel()) && (r < cxplane.width() ) )
             cxplane.ellipse(c, r, r);
     }

@@ -4,11 +4,13 @@ import complexP5.*;
 ComplexPlane cxplane;
 int n=5;
 int pointSize=2;
+ComplexFunction inv;
 
 void setup() {
   size(800, 800);
   cxplane = new ComplexPlane(this, 10.0f);
   background(255);
+  inv=new Inversion();
 }
 
 void draw() {
@@ -18,7 +20,7 @@ void draw() {
   ComplexGrid grid= new ComplexGrid(Complex.ZERO, sqrt(2), sqrt(2), n, n, cxplane);
   grid.translate(cxplane.mouse());
   ComplexGrid gridInv=new ComplexGrid(grid);
-  gridInv.invert();
+  gridInv.transform(inv);
   colorMode(HSB);
   /* start drawing normal grid*/
   pointSize=constrain(5-(int)log(n), 1, 5);
