@@ -50,13 +50,14 @@ void draw(){
   
   stroke(0);
   noFill();
-  
   beginShape();
   cxplane.vertex(z);
   cxplane.circle(z,cxplane.xpixel()*2);
-  for(int i=0 ; i < 100; i++){
+  for(int i=0 ; i < 20; i++){
     zt=F.map(zt);
-    cxplane.vertex(zt);
+    if(zt.abs() < cxplane.width()*2){
+      cxplane.vertex(zt);
+    }
     cxplane.circle(zt,cxplane.xpixel()*2);
   }
   
@@ -67,13 +68,13 @@ void draw(){
   
   //end the complex plane
   cxplane.end();
-  
+  //Texto de utilidad
   cxplane.mobiusText("f",F.f,20,20,48);
   cxplane.mobiusText("g",F.g,20,80,48);
   cxplane.complexText("a",alpha,20,150,24);
-  cxplane.complexText("Disk center ",disk.center(),20,180,24);
-  cxplane.drawText("Disk rad = "+disk.rad(),20,210,24);
-
-  cxplane.complexText("z",z,20,240,24);
+  cxplane.drawString("theta = "+theta,20,180+24,24);
+  cxplane.complexText("Disk center ",disk.center(),20,210,24);
+  cxplane.drawString("Disk rad = "+disk.rad(),20,240+24,24);
+  cxplane.complexText("z",z,20,270,24);
 
 }
