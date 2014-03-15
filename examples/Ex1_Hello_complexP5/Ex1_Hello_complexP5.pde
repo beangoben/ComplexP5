@@ -4,15 +4,19 @@ import complexP5.*;
 Basic Complex number tutorial
 */
 
-/* 1) create Complex number */
+/* 1) Create Complex number */
 // a = 2 + 4i
 Complex a = new Complex(2.0, 4.0);
 // b = 1 + 5i
 Complex b = new Complex(1.0, 5.0);
 // c = 1
 Complex c = new Complex(1.0);
-// another way of doing this is
+// Another way of doing this is
 c = Complex.ONE; // There is also ZERO and I
+//Using radio and argument of a complex number
+float rad = 1.0;
+float arg = PI;
+Complex d = Complex.polar(rad, arg);
 
 /* 2)  Modifying and accessing parts  */
 float re = a.real(); //real part (2)
@@ -63,6 +67,8 @@ println("a^-1 = " + a.inv() );
 println("√a = " + a.sqrt() );
 // Exponentiation
 println("exp(a)= e^a = " + a.exp() );
+//Logarithm
+println("log(a) = log a = " +a.log() );
 // Cos
 println("cos(a) = " + a.cos() );
 // Sin
