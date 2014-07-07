@@ -42,20 +42,20 @@ void draw(){
 void keyPressed() {
   
   // Radius control - Circle 1
-  if (key == 'd') {  
+  if (key == 's') {  
     r*=1.1;
   }
   
-  if (key == 'c') {
+  if (key == 'x') {
     if (r > (float) 1e-6 )
     r*=0.9;
   }
   
    // Control partitions - Circle 1
-  if (key == 's') {
+  if (key == 'a') {
     k++;
   }
-  if (key == 'x') {
+  if (key == 'z') {
     if (k>0) 
     k--;
   }
