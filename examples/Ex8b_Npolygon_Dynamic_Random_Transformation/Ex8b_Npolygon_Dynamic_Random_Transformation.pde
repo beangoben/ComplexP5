@@ -2,10 +2,10 @@ import complexP5.*;
 
 ComplexPlane cxplane;
 
-float r=0.7; //Define radius n-polygon
+float r=0.4; //Define radius n-polygon
 int n=3; //Define sides n-polygon
 float t; //Variable rotation of the n-polygon
-float r1=0.5,r2=0.05; //Defined conditions of the transformation
+float r1=0.4,r2=0.01; //Defined conditions of the transformation
 
 void setup(){
 
@@ -30,8 +30,8 @@ void draw(){
  //Translation and rotation of the transformation
  for(int j=1; j<30; j++){
   
-  Complex tras = new Complex(noise(millis()/2000.0)*j, noise(millis()/2000.0)*j);
-  Complex rot = Complex.polar((r1)*j,(r1*n)*j);
+  Complex trans = new Complex(j*r2,j*r2);
+  Complex rot = Complex.polar(r1*j,j*r1);
   fill(color(noise(millis()/10000.0)*125, 100, 105, 85));
  
   //Construction of n-polygon
@@ -40,8 +40,8 @@ void draw(){
   for(int i=0; i<=n; i++){
     
     Complex a = Complex.polar(r, 2*PI/n*i+t);
-    a.add(tras);
-    cxplane.vertex(d.add(a).mul(rot).add(tras));
+    a=a.add(d);
+    cxplane.vertex((a.muli(rot)).add(trans));
     
 }
   endShape();
@@ -69,6 +69,7 @@ void keyPressed() {
     if(r<2) r*=1.1;
   }
   if (key == 'x') {
+    if(0.01<r)
     r/=1.1;
   }
   
@@ -79,9 +80,17 @@ void keyPressed() {
   }
   
   if(key == 'c'){
+  if(0.01<=r1)
     r1/=1.1;
   }
   
+  if(key == 'f'){
+    if(r2<2) r2+=.1;
+  }
+  
+  if(key == 'v'){
+  if(-1.5<r2)
+    r2-=.1;
+  }
 
 }
-
